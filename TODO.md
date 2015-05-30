@@ -1,5 +1,5 @@
 - [ ] console.log repo name, updated at, language, stars and forks
-- [ ] console.log profile object to see data(avatar url, name, username, employer, location, email, blog url, join date)
+- [x] console.log profile object to see data(avatar url, name, username, employer, location, email, blog url, join date)
 - [ ] write templates for dynamic sections (pick out which are dynamic)
       - [ ] repos as ul/li within a section
       - [ ] profile info as a sidebar div
