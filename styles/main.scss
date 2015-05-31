@@ -14,12 +14,118 @@ $very-light-gray: #fafafa;
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
-body {
-  font-family: $base-font-family;
-  background-color: $base-background-color;
-  color: $base-font-color;
+//list style
+ul, ol{
+  list-style: none;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $base-font-family;
+  background-color: white;
+  color: $base-font-color;
+  @include outer-container(980px);
+}
+
+.header-static{
+  display: block;
+  height: 50px;
+  background-color: $very-light-gray;
+  color: black;
+  border-bottom: 1px solid $medium-gray;
+}
+
+.header-static span{
+  margin-left: 10px;
+}
+
+.header-static a:hover,
+span:hover {
+  color: $blue;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+.site-search-form{
+  border-radius: 4px;
+  border: 1px solid $light-gray;
+  width: 300px;
+  vertical-align: middle;
+
+}
+
+.nav-links{
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -17px;
+}
+
+.profile-options{
+  text-align: right;
+  vertical-align: middle;
+  margin-top: -21px;
+}
+
+
 .sidebar{
-  float: left;
+  @include outer-container;
+  @include span-columns(3);
+  margin-top: 50px;
+}
+
+img{
+  height: 230px;
+  width: 230px;
+  border-radius: 7px;
+  padding: 0;
+  margin-top: -30px;
+}
+
+.name{
+  margin-top: 0px;
+}
+
+.login{
+  color: $medium-gray;
+  font-weight: lighter;
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin-top: -20px;
+  border-bottom: 1px solid $light-gray;
+}
+
+.attributes{
+  display: inline;
+}
+
+ul{
+  display: inline;
+  color: $blue;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  @include outer-container;
+  @include span-columns(8);
+  margin-top: 50px;
+}
+
+.repo-name{
+  color: $blue;
 }

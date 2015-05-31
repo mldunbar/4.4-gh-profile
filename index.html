@@ -9,17 +9,35 @@
 
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
     <link rel="stylesheet" href="dist/styles/main.css">
-
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
+<div class="header-static">
+  <span class="mega-octicon octicon-mark-github"></span>
+  <input class="site-search-form" action="index.html" method="post" placeholder="Search GitHub"></input>
+    <div class="nav-links">
+      <a href="">Explore</a>
+      <a href="">Gist</a>
+      <a href="">Blog</a>
+      <a href="">Help</a>
+    </div>
+    <div class="profile-options">
+      <a href="https://github.com/{{name}}?tab=repositories">mldunbar</a>
+      <span class="octicon octicon-plus"></span>
+      <span class="octicon octicon-inbox"></span>
+      <span class="octicon octicon-gear"></span>
+      <span class="octicon octicon-sign-out"></span>
+    </div>
+</div>
+
   <section class="content">
     <section class="sidebar">
-      <div class="user"></div>
+      <div class="user-template"></div>
     </section>
   <section class="main">
-    <div class="repos"></div>
+    <div class="repo-template"></div>
   </section>
   </section>
 
