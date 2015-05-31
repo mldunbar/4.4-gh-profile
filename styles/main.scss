@@ -168,8 +168,49 @@ img{
   @include outer-container;
   @include span-columns(8);
   margin-top: 50px;
+  height: 100%;
 }
 
 .repo-name{
   color: $blue;
+}
+
+.footer{
+  @include outer-container;
+  @include span-columns(10);
+  height: 20px;
+  border-top: 1px solid $light-gray;
+  display: inline-block;
+}
+
+.footer span,
+a
+p
+{
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.footer a{
+  color: $blue;
+  font-weight: normal;
+}
+
+.footer a:hover{
+  color: $blue;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.footer span{
+  color: $medium-gray;
+}
+
+.footer span:hover{
+  color: $dark-gray;
+}
+
+.footer p{
+  font-size: 12px;
+  color: $medium-gray;
 }

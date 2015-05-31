@@ -12,9 +12,9 @@
 
   $.ajax({
     url: 'https://api.github.com/users/mldunbar/repos',
-  }).then(function(array){
-    $('.repo-template').prepend(JST['repo-template'](array));
-    console.log(array);
+  }).then(function(repos){
+    $('.repo').prepend(JST['repo-template'](repos));
+    console.log(repos);
   });
 
 });

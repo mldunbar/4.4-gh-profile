@@ -7,7 +7,7 @@ this["JST"]["repo-template"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta
 
   return "<div class=\"repo-template\">\n  <a href=\"#\">"
     + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</a>\n  <h4>This is connected"
+    + "</a>\n  <h4>This is connected..."
     + alias3(((helper = (helper = helpers.updated_at || (depth0 != null ? depth0.updated_at : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"updated_at","hash":{},"data":data}) : helper)))
     + "</h4>\n  <h3>"
     + alias3(((helper = (helper = helpers.language || (depth0 != null ? depth0.language : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"language","hash":{},"data":data}) : helper)))
