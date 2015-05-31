@@ -108,16 +108,60 @@ img{
   border-bottom: 1px solid $light-gray;
 }
 
-.attributes{
+.attributes h6{
   display: inline;
+  color: black;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: left;
 }
 
-ul{
-  display: inline;
+.attributes .location{
+  margin-left: 6px;
+}
+
+.attributes .octicon{
+  color: $light-gray;
+  margin: 0 3px 5px -38px;
+}
+
+.attributes{
+  padding-bottom: 20px;
+  border-bottom: 1px solid $light-gray;
+}
+
+.numbers{
+  display: inline-block;
   color: $blue;
+  font-size: 25px;
   font-weight: bold;
   padding: 0;
   margin: 0;
+  border-bottom: 1px solid $light-gray;
+}
+
+.followers{
+  margin-left: 30px;
+}
+
+.starred{
+  //still need to format this...as zero
+}
+
+.following{
+  margin: -55px 0 0 100px;
+}
+
+.numbers span{
+  display: block;
+  font-size: 10px;
+  color: $light-gray;
+  font-weight: normal;
+  margin-left: -18px;
+}
+
+.numbers span:hover{
+  color: $blue;
 }
 
 .main {

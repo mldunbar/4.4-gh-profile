@@ -3,17 +3,27 @@
   <h2 class="name">{{name}}</h2>
   <h3 class="login">{{login}}</h3>
 </div>
-<div class="attributes">
-  <span class="octicon octicon-location"></span>
-  <h6>{{location}}</h6>
-  <span class="octicon octicon-clock"></span>
-  <h6>{{created_at}}</h6>
-</div>
+<ul class="attributes">
+  <li>
+    <span class="octicon octicon-location"></span>
+    <h6 class="location">{{location}}</h6>
+  </li>
+  <li>
+    <span class="octicon octicon-clock"></span>
+    <h6>Joined on {{created_at}}</h6>
+  </li>
+</ul>
 
-<ul>
-  <li>{{followers}}</li>
-  <li>{{starred}}</li>
-  <li>{{following}}</li>
+<ul class="numbers">
+  <li class="followers">{{followers}}
+    <span>Followers</span>
+  </li>
+  <li class="starred">{{starred}}
+    <span>Starred</span>
+  </li>
+  <li class="following">{{following}}
+    <span>Following</span>
+  </li>
 </ul>
 
 
